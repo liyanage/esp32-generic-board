@@ -1483,7 +1483,7 @@
   (gr_text IO0 (at 22.5679 34.29) (layer B.SilkS) (tstamp 5DC76A9A)
     (effects (font (size 0.762 0.762) (thickness 0.1524)) (justify left mirror))
   )
-  (gr_text IO4 (at 22.5679 31.7754) (layer B.SilkS) (tstamp 5DC76A9A)
+  (gr_text IO14 (at 22.5679 31.7754) (layer B.SilkS) (tstamp 5DC76A9A)
     (effects (font (size 0.762 0.762) (thickness 0.1524)) (justify left mirror))
   )
   (gr_text IO16 (at 22.5806 29.2354) (layer B.SilkS) (tstamp 5DC76A9A)

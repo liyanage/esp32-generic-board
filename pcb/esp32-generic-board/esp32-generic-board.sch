@@ -236,7 +236,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 2700 8700 2900
 Wire Wire Line
-	4350 2700 6500 2700
+	4350 2700 4700 2700
 $Comp
 L power:GND #PWR0104
 U 1 1 5DBB5C28
@@ -274,28 +274,6 @@ F 3 "" H 3900 3700 50  0001 C CNN
 	1    3900 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5DBBB02E
-P 4700 6150
-F 0 "#PWR0106" H 4700 5900 50  0001 C CNN
-F 1 "GND" H 4705 5977 50  0000 C CNN
-F 2 "" H 4700 6150 50  0001 C CNN
-F 3 "" H 4700 6150 50  0001 C CNN
-	1    4700 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 6150 4700 6150
-Connection ~ 4700 6150
-Wire Wire Line
-	4800 6150 4700 6150
-Wire Wire Line
-	4900 6150 4800 6150
-Connection ~ 4800 6150
-Wire Wire Line
-	3900 6150 4500 6150
-Connection ~ 4500 6150
 $Comp
 L Device:R R1
 U 1 1 5DBBEF48
@@ -358,53 +336,11 @@ Wire Wire Line
 	2100 4200 1950 4200
 Connection ~ 2100 4200
 Wire Wire Line
-	4700 6050 4700 6150
-Wire Wire Line
-	3900 5750 3900 6150
-Wire Wire Line
-	4500 6050 4500 6150
-Wire Wire Line
-	4900 6050 4900 6150
-Wire Wire Line
-	4800 3400 4800 4050
-Wire Wire Line
-	4800 6050 4800 6150
-Wire Wire Line
-	2100 4200 2100 4650
-Wire Wire Line
-	2100 4650 3900 4650
-$Comp
-L power:GND #PWR0108
-U 1 1 5DBBA992
-P 3450 4350
-F 0 "#PWR0108" H 3450 4100 50  0001 C CNN
-F 1 "GND" H 3455 4177 50  0000 C CNN
-F 2 "" H 3450 4350 50  0001 C CNN
-F 3 "" H 3450 4350 50  0001 C CNN
-	1    3450 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 4050 3900 4350
-$Comp
-L Device:C C1
-U 1 1 5DBB99C0
-P 3450 4200
-F 0 "C1" H 3565 4246 50  0000 L CNN
-F 1 "100nF" H 3565 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3488 4050 50  0001 C CNN
-F 3 "~" H 3450 4200 50  0001 C CNN
-	1    3450 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 4050 3450 4050
+	2100 4200 2100 4850
 Wire Wire Line
 	2100 4000 2250 4000
 Wire Wire Line
-	2250 4000 2250 4750
-Wire Wire Line
-	2250 4750 3900 4750
+	2250 4000 2250 4950
 Connection ~ 2100 4000
 $Comp
 L power:GND #PWR0109
@@ -429,71 +365,6 @@ F 3 "" H 1050 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
-U 1 1 5DBE3B94
-P 5900 5000
-F 0 "D1" V 5847 5078 50  0000 L CNN
-F 1 "LED" V 5938 5078 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 5900 5000 50  0001 C CNN
-F 3 "~" H 5900 5000 50  0001 C CNN
-	1    5900 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5DBE5F28
-P 5900 4600
-F 0 "R3" H 5970 4646 50  0000 L CNN
-F 1 "270" H 5970 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5830 4600 50  0001 C CNN
-F 3 "~" H 5900 4600 50  0001 C CNN
-	1    5900 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 4750 5900 4850
-Text Label 5650 5350 0    50   ~ 0
-txled
-$Comp
-L Device:LED D2
-U 1 1 5DBE98C6
-P 6200 5000
-F 0 "D2" V 6147 5078 50  0000 L CNN
-F 1 "LED" V 6238 5078 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 6200 5000 50  0001 C CNN
-F 3 "~" H 6200 5000 50  0001 C CNN
-	1    6200 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5500 5450 6200 5450
-Wire Wire Line
-	6200 5450 6200 5150
-Text Label 5650 5450 0    50   ~ 0
-rxled
-$Comp
-L Device:R R4
-U 1 1 5DBEB936
-P 6200 4600
-F 0 "R4" H 6270 4646 50  0000 L CNN
-F 1 "270" H 6270 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6130 4600 50  0001 C CNN
-F 3 "~" H 6200 4600 50  0001 C CNN
-	1    6200 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 4750 6200 4850
-Connection ~ 3900 4050
-Wire Wire Line
-	6200 4450 6200 3750
-Wire Wire Line
-	5900 3750 5900 4450
-Wire Wire Line
-	4600 4050 4600 3750
-Wire Wire Line
-	4600 3750 5900 3750
-$Comp
 L Device:C C5
 U 1 1 5DBB7261
 P 4350 3550
@@ -504,8 +375,6 @@ F 3 "~" H 4350 3550 50  0001 C CNN
 	1    4350 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 3400 4350 3400
 $Comp
 L power:GND #PWR0111
 U 1 1 5DBB8DA9
@@ -520,23 +389,10 @@ $EndComp
 Wire Wire Line
 	3900 3400 4350 3400
 Connection ~ 4350 3400
-Connection ~ 5900 3750
-Wire Wire Line
-	5900 3750 6200 3750
-Wire Wire Line
-	5500 5350 5900 5350
-Wire Wire Line
-	5900 5350 5900 5150
-Wire Wire Line
-	5500 4350 5500 1800
 Wire Wire Line
 	5500 1800 9900 1800
 Wire Wire Line
 	9900 1800 9900 3400
-Wire Wire Line
-	5500 4450 5550 4450
-Wire Wire Line
-	5550 4450 5550 1850
 Wire Wire Line
 	5550 1850 9850 1850
 Wire Wire Line
@@ -564,16 +420,8 @@ Wire Wire Line
 Wire Wire Line
 	6700 3100 8100 3100
 Wire Wire Line
-	5500 4550 5650 4550
-Wire Wire Line
-	5650 4550 5650 3100
-Wire Wire Line
-	5650 3100 6550 3100
+	5750 3100 6550 3100
 Connection ~ 6700 3100
-Wire Wire Line
-	5500 4750 5700 4750
-Wire Wire Line
-	5700 4750 5700 1900
 Wire Wire Line
 	5700 1900 9800 1900
 Wire Wire Line
@@ -763,8 +611,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 3600 7000 3600
 Wire Wire Line
-	4800 3400 6300 3400
-Wire Wire Line
 	6300 3400 6300 3200
 Wire Wire Line
 	6300 3200 7300 3200
@@ -772,7 +618,6 @@ Wire Wire Line
 	7300 3200 7300 3500
 Wire Wire Line
 	7300 3500 7000 3500
-Connection ~ 4800 3400
 Wire Wire Line
 	3050 2800 2850 2800
 Wire Wire Line
@@ -975,9 +820,9 @@ Wire Wire Line
 Connection ~ 3300 1950
 Text Label 1850 1300 0    50   ~ 0
 Vext
-Text Label 2450 4650 0    50   ~ 0
+Text Label 2500 4950 0    50   ~ 0
 D-
-Text Label 2450 4750 0    50   ~ 0
+Text Label 2500 4850 0    50   ~ 0
 D+
 Text Label 2000 3600 0    50   ~ 0
 CC1
@@ -985,8 +830,6 @@ Text Label 2000 3700 0    50   ~ 0
 CC2
 Text Label 2500 2250 0    50   ~ 0
 Vbuck
-Text Label 4000 4050 0    50   ~ 0
-Vccio
 Text Label 7100 3100 0    50   ~ 0
 EN-RTS
 Text Label 5700 2400 0    50   ~ 0
@@ -1004,28 +847,231 @@ NoConn ~ 1950 5100
 NoConn ~ 3450 1750
 NoConn ~ 3450 1150
 NoConn ~ 4250 1750
-NoConn ~ 5500 5750
-NoConn ~ 5500 5650
-NoConn ~ 5500 5550
-Connection ~ 4600 4050
-Wire Wire Line
-	4600 4050 3900 4050
 $Comp
-L Interface_USB:FT232RL U3
-U 1 1 5DB3850E
-P 4700 5050
-F 0 "U3" H 4700 6231 50  0000 C CNN
-F 1 "FT232RL" H 4700 6140 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 4700 5050 50  0001 C CNN
-F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 4700 5050 50  0001 C CNN
-	1    4700 5050
+L Interface_USB:CH340G U3
+U 1 1 5DC218F9
+P 4450 4950
+F 0 "U3" H 4450 4261 50  0000 C CNN
+F 1 "CH340G" H 4450 4170 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4500 4400 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 4100 5750 50  0001 C CNN
+	1    4450 4950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3900 5050
-NoConn ~ 3900 5250
-NoConn ~ 3900 5450
-NoConn ~ 5500 4650
-NoConn ~ 5500 4850
-NoConn ~ 5500 4950
-NoConn ~ 5500 5050
+$Comp
+L power:GND #PWR0106
+U 1 1 5DBBB02E
+P 4800 5550
+F 0 "#PWR0106" H 4800 5300 50  0001 C CNN
+F 1 "GND" H 4805 5377 50  0000 C CNN
+F 2 "" H 4800 5550 50  0001 C CNN
+F 3 "" H 4800 5550 50  0001 C CNN
+	1    4800 5550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4050 5150
+NoConn ~ 4050 5350
+Wire Wire Line
+	4350 3400 6300 3400
+$Comp
+L Device:C C1
+U 1 1 5DBB99C0
+P 3950 4200
+F 0 "C1" H 4065 4246 50  0000 L CNN
+F 1 "100nF" H 4065 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3988 4050 50  0001 C CNN
+F 3 "~" H 3950 4200 50  0001 C CNN
+	1    3950 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5DBBA992
+P 3700 4200
+F 0 "#PWR0108" H 3700 3950 50  0001 C CNN
+F 1 "GND" H 3705 4027 50  0000 C CNN
+F 2 "" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4350 4450 4200
+Wire Wire Line
+	2250 4950 4050 4950
+Wire Wire Line
+	2100 4850 4050 4850
+Wire Wire Line
+	4450 5550 4800 5550
+Wire Wire Line
+	4700 2700 4700 4050
+Wire Wire Line
+	4700 4050 4350 4050
+Wire Wire Line
+	4350 4050 4350 4200
+Connection ~ 4700 2700
+Wire Wire Line
+	4700 2700 4950 2700
+Wire Wire Line
+	5700 1900 5700 5250
+Wire Wire Line
+	4850 5250 5700 5250
+Wire Wire Line
+	5750 3100 5750 5350
+Wire Wire Line
+	4850 5350 5750 5350
+Wire Wire Line
+	5550 1850 5550 4650
+Wire Wire Line
+	4850 4650 5300 4650
+Wire Wire Line
+	5500 1800 5500 4550
+Wire Wire Line
+	4850 4550 4950 4550
+$Comp
+L Device:LED D1
+U 1 1 5DDD2B6D
+P 4950 4150
+F 0 "D1" V 4989 4033 50  0000 R CNN
+F 1 "LED" V 4898 4033 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4950 4150 50  0001 C CNN
+F 3 "~" H 4950 4150 50  0001 C CNN
+	1    4950 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5DDD762E
+P 5300 4150
+F 0 "D2" V 5339 4033 50  0000 R CNN
+F 1 "LED" V 5248 4033 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5300 4150 50  0001 C CNN
+F 3 "~" H 5300 4150 50  0001 C CNN
+	1    5300 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 4300 4950 4550
+Connection ~ 4950 4550
+Wire Wire Line
+	4950 4550 5500 4550
+Wire Wire Line
+	5300 4300 5300 4650
+Connection ~ 5300 4650
+Wire Wire Line
+	5300 4650 5550 4650
+$Comp
+L Device:R R3
+U 1 1 5DE90B60
+P 4950 3850
+F 0 "R3" H 5020 3896 50  0000 L CNN
+F 1 "1k" H 5020 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4880 3850 50  0001 C CNN
+F 3 "~" H 4950 3850 50  0001 C CNN
+	1    4950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DE916A1
+P 5300 3850
+F 0 "R4" H 5370 3896 50  0000 L CNN
+F 1 "1k" H 5370 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 3850 50  0001 C CNN
+F 3 "~" H 5300 3850 50  0001 C CNN
+	1    5300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3700 4950 2700
+Connection ~ 4950 2700
+Wire Wire Line
+	4950 2700 5300 2700
+Wire Wire Line
+	5300 3700 5300 2700
+Connection ~ 5300 2700
+Wire Wire Line
+	5300 2700 6500 2700
+Wire Wire Line
+	3700 4200 3800 4200
+Wire Wire Line
+	4450 4200 4350 4200
+Connection ~ 4350 4200
+Wire Wire Line
+	4350 4200 4350 4350
+Wire Wire Line
+	4350 4200 4100 4200
+NoConn ~ 4850 5150
+NoConn ~ 4850 5050
+NoConn ~ 4850 4950
+NoConn ~ 4850 4850
+Text Label 4950 4450 0    50   ~ 0
+tx
+Text Label 5300 4450 0    50   ~ 0
+rx
+NoConn ~ 4050 4650
+Text Label 9400 3100 0    50   ~ 0
+IO0
+Text Label 9400 3200 0    50   ~ 0
+TX-IO1
+Text Label 9400 3300 0    50   ~ 0
+IO2
+Text Label 9400 3400 0    50   ~ 0
+RX-IO3
+Text Label 9400 3500 0    50   ~ 0
+IO4
+Text Label 9400 3600 0    50   ~ 0
+IO5
+Text Label 9400 3700 0    50   ~ 0
+IO12
+Text Label 9400 3800 0    50   ~ 0
+IO13
+Text Label 9400 3900 0    50   ~ 0
+IO14
+Text Label 9400 4000 0    50   ~ 0
+IO15
+Text Label 9400 4100 0    50   ~ 0
+IO16
+Text Label 9400 4200 0    50   ~ 0
+IO17
+Text Label 9400 4300 0    50   ~ 0
+IO18
+Text Label 9400 4400 0    50   ~ 0
+IO19
+Text Label 9400 4500 0    50   ~ 0
+IO21
+Text Label 9400 4600 0    50   ~ 0
+IO22
+Text Label 9400 4700 0    50   ~ 0
+IO23
+Text Label 9400 4800 0    50   ~ 0
+IO25
+Text Label 9400 4900 0    50   ~ 0
+IO26
+Text Label 9400 5000 0    50   ~ 0
+IO27
+Text Label 9400 5100 0    50   ~ 0
+IO32
+Text Label 9400 5200 0    50   ~ 0
+IO33
+Text Label 9400 5300 0    50   ~ 0
+IO34
+Text Label 9400 5400 0    50   ~ 0
+IO35
+Text Label 7600 3300 0    50   ~ 0
+SENSOR_VP
+Text Label 7600 3400 0    50   ~ 0
+SENSOR_VN
+Text Label 7850 4300 0    50   ~ 0
+SDO-SD0
+Text Label 7900 4400 0    50   ~ 0
+SDI-SD1
+Text Label 7950 4500 0    50   ~ 0
+SHD-SD2
+Text Label 7950 4600 0    50   ~ 0
+SWP-SD3
+Text Label 7950 4700 0    50   ~ 0
+SCK-CLK
+Text Label 7950 4800 0    50   ~ 0
+SCS-CMD
 $EndSCHEMATC
